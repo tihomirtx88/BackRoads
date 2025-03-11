@@ -1,5 +1,5 @@
-import { pageLinks, socialLinks } from "@/data";
-import Link from "react-dom";
+import { socialLinks } from "@/data";
+import PageLinks from "./PageLinks";
 
 const Navbar = () => {
   return (
@@ -13,7 +13,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <ul className="nav-links" id="nav-links">
+          {/* <ul className="nav-links" id="nav-links">
             {pageLinks.map((link) => {
               return (
                 <li key={link.id}>
@@ -23,7 +23,8 @@ const Navbar = () => {
                 </li>
               );
             })}
-          </ul>
+          </ul> */}
+          <PageLinks parentClass="nav-links" itemClass="nav-link"/>
           <ul className="nav-icons">
             {socialLinks.map((link) => {
               return (
