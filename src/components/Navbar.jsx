@@ -1,5 +1,6 @@
 import { socialLinks } from "@/data";
 import PageLinks from "./PageLinks";
+import SocialLink from "@/components/SocialLink";
 
 const Navbar = () => {
   return (

@@ -1,4 +1,4 @@
-import Link from "react-dom";
+import { Link } from "react-router-dom";
 import Title from "@/components/Title";
 
 const About = () => {
@@ -26,9 +26,9 @@ const About = () => {
               Aspernatur quisquam harum nam cumque temporibus explicabo dolorum
               sapiente odio unde dolor?
             </p>
-            <Link href="#" className="btn">
+            <a href="#" className="btn">
               read more
-            </Link>
+            </a>
           </article>
         </div>
       </section>

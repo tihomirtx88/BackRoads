@@ -1,6 +1,7 @@
 import { socialLinks } from "../data";
-import Link from "react-dom";
+import { Link } from "react-router-dom";
 import PageLinks from "./PageLinks";
+import SocialLink from "@/components/SocialLink";
 
 const Footer = () => {
   return (
@@ -21,18 +22,8 @@ const Footer = () => {
         <PageLinks parentClass="footer-links" itemClass="footer-link"/>
         <ul className="footer-icons">
         {socialLinks.map((link) => {
-            const { id, href, icon } = link;
             return (
-              <li key={id}>
-              <Link
-                href={href}
-                target="_blank"
-                className="footer-icon"
-                ref="noreferrer"
-              >
-                <i className={icon} />
-              </Link>
-            </li>
+               <SocialLink key={link.id} {...link} itemClass='footer-icon' />
             );
           })}
          
